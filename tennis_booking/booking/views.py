@@ -19,3 +19,6 @@ def book_slot(request):
     return render(request, 'booking/book_slot.html', {'form': form, 'available_slots': available_slots})
 
 # Create your views here.
+
+def booking_success(request):
+    return render(request, 'booking/booking_success.html')
